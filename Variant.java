@@ -9,7 +9,12 @@ class Variant
     private String[] _alts;
     private int      _maternal = 0, _paternal = 0;
     private boolean  _isPhased = false; // Phasing
-    private static final Random _rand = new Random();
+    private static final Random _rand;
+    
+    // Add  the random seed
+    static {
+	_rand = new Random(0); 
+    }
     
     public Variant(int chr,int pos,int del,String[] alts,String phase)
     {
