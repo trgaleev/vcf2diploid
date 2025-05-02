@@ -11,7 +11,7 @@ $ make
 2. Running
 ==========
 
-java -jar vcf2diploid.jar -id sample_id -chr file.fa ... [-vcf file.vcf ...]
+java -jar vcf2diploid.jar -id sample_id -chr file.fa ... [-vcf file.vcf ...] -outDir output_dir
 
 where sample_id is the ID of individual whose genome is being constructed
 (e.g., NA12878), file.fa is FASTA file(s) with reference sequence(s), and
