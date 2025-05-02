@@ -20,7 +20,7 @@ VCF files at a time. Splitting the whole genome in multiple files (e.g., with
 one FASTA file per chromosome) reduces memory usage.
 Amount of memory used by Java can be increased as follows
 
-java -Xmx4000m -jar vcf2diploid.jar -id sample_id -chr file.fa ... [-vcf file.vcf ...]
+java -Xmx4000m -jar vcf2diploid.jar -id sample_id -chr file.fa ... [-vcf file.vcf ...] -outDir output_folder
 
 You can try the program by running 'test_run.sh' script in the 'example'
 directory. See also "Important notes" below.
